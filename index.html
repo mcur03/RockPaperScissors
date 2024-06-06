@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conten">
+        <img src="assets/pastel3.PNG" alt="pastel3" class="pastel3">
+        <img src="assets/pastel4.PNG" alt="pastel4" class="pastel4">
+        <img src="assets/pastel2.PNG" alt="pastel2" class="pastel2">
+        <img src="assets/pastel1.PNG" alt="pastel1" class="pastel1">
+        <!-- <img src="assets/title.PNG" alt="title"> -->
+        <h1 class="title1">ROCK, PAPER, SCISSOR</h1>
+        <hr class="h-line">
+        <button class="btn-reload" id="btn-reload">Reload💞</button>
+        <div class="div1">
+                <h2>Gamer Result</h2>
+            <div class="div2">
+
+                <div class="contGame">
+                    <div class="user">
+                        <h2>User</h2>
+                        <p id="numUser">0</p>
+                        <div class="btn">
+                            <button class="btnJuego" id="btnURock"><img class="juego" src="assets/piedra.png" alt="piedra"></button>
+                            <button class="btnJuego" id="btnUPaper"><img class="juego" src="assets/papel.png" alt="papel"></button>
+                            <button class="btnJuego" id="btnUScissor"><img class="juego" src="assets/tijera.png" alt="tijera"></button>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <h2>CPU</h2>
+                        <p id="numCpu">0</p>
+                        <div class="btn">
+                            <button class="btnJuegoC" ><img id="btnCRock" class="juego" src="assets/piedra.png" alt="piedra"></button>
+                            <button class="btnJuegoC" ><img id="btnCPaper" class="juego" src="assets/papel.png" alt="papel"></button>
+                            <button class="btnJuegoC" ><img id="btnCSciossors" class="juego" src="assets/tijera.png" alt="tijera"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="contResult">
+                    <div class="result-user">
+                        <h2 class="titleResultUser">Here is your choice!</h2>
+                        <img id="resultUser" src="" alt="">
+                    </div>
+                    <div class="result-cpu">
+                        <h2>Choice of the CPU !</h2>
+                        <img id="resultCpu" src="" alt="">
+                    </div>
+                </div>
+            </div>
+            <p id="winner" class="winner"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
