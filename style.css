@@ -62,7 +62,6 @@
 
 .btn-reload{
     background-color: #BDE0FE;
-    width: 12%;
     padding: 0.5rem;
     border-radius: 10px;
     border: none;
@@ -86,10 +85,19 @@
     align-items: center;
     gap: 2rem;
     height: 80vh;
-
+    z-index: 1;
     h2{
         color: #efefef;
         text-shadow: 5px 5px 5px #FFC8DD;
+    }
+    @media screen and (max-width: 768px) {
+        h2{
+            display: none;
+        }
+        .user{
+            padding-top: 2rem;
+            gap: 3rem;
+        }
     }
 }
 
@@ -146,7 +154,6 @@
     width: 50%;
 
     p{
-        width: 10%;
         background-color: #BDE0FE;
         font-size: medium;
         font-weight: 900;
@@ -176,6 +183,7 @@
         }
         
     }
+    
 }
 .btnJuego:hover, .btnJuegoC:hover{
     box-shadow: 5px 5px 5px gray;
